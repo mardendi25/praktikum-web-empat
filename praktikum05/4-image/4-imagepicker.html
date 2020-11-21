@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMAGE PICKER</title>
+</head>
+<body style="margin: 200px">
+
+	<center>
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="https://www.worldofghibli.id/wp-content/uploads/2020/02/contoh-gambar-komputer-kartun.png">PILIH KARAKTER</option>
+			<option value="https://www.nesabamedia.com/wp-content/uploads/2018/06/motherboard.jpg"> Motherboard</option>
+			<option value="https://www.nesabamedia.com/wp-content/uploads/2018/06/CPU.jpg">Central Processing Unit</option>
+			<option value="https://www.nesabamedia.com/wp-content/uploads/2018/06/RAM.jpg">Random Access Memory</option>
+			<option value="https://www.nesabamedia.com/wp-content/uploads/2018/06/harddisk.jpg">Hard Disk Drive</option>
+			<option value="https://www.nesabamedia.com/wp-content/uploads/2018/06/VGA-card.jpg">VGA</option>
+			<option value="https://www.nesabamedia.com/wp-content/uploads/2018/06/optical-drive.jpg">Optical Drive </option>
+		</select>
+	</center>
+		<br/>
+	<img src="" style="width: 100%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>
